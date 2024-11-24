@@ -6,7 +6,7 @@
 import random
 
 def generate_bucket_name(project_name):
-    random_suffix = random.randinit(1000, 9999)
+    random_suffix = random.randint(1000, 9999)
     bucket_name = f"{project_name}-bucket-{random_suffix}"
     return bucket_name
 
